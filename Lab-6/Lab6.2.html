@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="forms_login">
+        <input type="text" id="username" name="username"  placeholder="username">
+        <input type="password" id="password" name="password" placeholder="password" >
+        <button type="button" onclick="f()">Login</button>
+    </form>
+    <script type="text/javascript">
+        function f() {
+            // var a = document.forms["forms_login"];
+            // var u = a.username.value;
+            // var p = a.password.value;
+            // if (u=="Nishu" && p=="12134") {
+            //     alert("Login successful!");
+            // }
+            // else {
+            //     alert("Login unsuccessful!");
+            // }
+            var a = document.getElementById("username");
+            var b = document.getElementById("password");
+            if(a.value ==="Nishu" && b.value=== "1234")
+        {
+            alert("Login successful!");
+        }
+        else{
+            alert("Login unsuccessful!");
+        }
+        }
+    </script>
+</body>
+
+</html>

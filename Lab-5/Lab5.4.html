@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let arr=[
+            {
+                    name:"arjun bala",
+                    ID: 101,
+                    dept:"BSC(H)",
+                    mobile:"1234567892"
+
+            },
+            {
+                    name:"Dhwanik zala",
+                    ID: 102,
+                    dept:"BSC(H)",
+                    mobile:"7894561235"
+            },
+            {
+                    name:"Shruti Maniar",
+                    ID: 103,
+                    dept:"BSC(H)",
+                    mobile:"4569328715"
+            },
+            {
+                    name:"Swati mam",
+                    ID: 104,
+                    dept:"BSC(H)",
+                    mobile:"7418529635"
+            },
+            {
+                    name:"Punit sir",
+                    ID: 105,
+                    dept:"BSC(H)",
+                    mobile:"8523697412"
+            },
+            {
+                    name:"vasudev sir",
+                    ID: 106,
+                    dept:"BSC(H)",
+                    mobile:"4562893175"
+            },
+        ];
+
+        for(let i=0; i<arr.length;i++)
+        {
+            document.write(arr[i].name);
+            document.write("<br>");
+            document.write(arr[i].ID);
+            document.write("<br>");
+            document.write(arr[i].dept);
+            document.write("<br>");
+            document.write(arr[i].mobile);
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+        document.write("<br>");
+
+        // methods:
+        //pop:
+        document.write(""+arr.pop(arr.name));
+        // push:
+        document.write(""+arr.push({name:'Kartik'}));
+        //document.write(""+arr[2].id.splice(0, 1));
+        // slice:
+        document.write(""+arr.splice(1,1));
+
+        for(let i=0; i<arr.length;i++)
+        {
+            document.write(arr[i].name);
+            document.write("<br>");
+            document.write(arr[i].ID);
+            document.write("<br>");
+            document.write(arr[i].dept);
+            document.write("<br>");
+            document.write(arr[i].mobile);
+            document.write("<br>");
+        }   
+
+    </script>
+</body>
+</html>

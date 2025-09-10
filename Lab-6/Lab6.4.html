@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="forms_login" onsubmit="validate(event)">
+        <label>USERNAME:</label>
+        <input id="username" placeholder="username">
+        <br> <br>
+        <label>PASSWORD:</label>
+        <input id="password" placeholder="password">
+        <br> <br>
+        <label>REPEAT PASSWORD:</label>
+        <input id="Rpassword" placeholder="Rpassword">
+        <br> <br>
+        <label>ENROLLMENT:</label>
+        <input id="enrollment" placeholder="enrollment">
+        <br> <br>
+        <label>EMAIL:</label>
+        <input id="email" placeholder="email">
+        <br> <br>
+        <button onclick="f()">LOGIN</button>
+    </form>
+    <script type="text/javascript">
+        function validate(event)
+        {
+            event.preventDefault();
+            // for username
+
+            var a = document.getElementById("username").value;
+            pattern1= '^[a-zA-Z_.]{8,}$';
+            reg1= new RegExp(pattern1);
+            if(!reg1.test(username))
+        {
+            alert("INVALID USERNAME");
+        }
+
+// for password
+
+            var b = document.getElementById("password").value;
+            pattern2= '^(?=.\d)(?=.[!@#$%^&])[A-Za-z\d!@#$%^&]{8,12}$';
+            reg2= new RegExp(pattern2);
+            if(!reg2.test(password)){
+                alert ("INVALID PASSWORD");
+            }
+//repeat Passwod
+            var c = document.getElementById("Rpassword").value;
+            pattern3= '^(?=.\d)(?=.[!@#$%^&])[A-Za-z\d!@#$%^&]{8,12}$';
+            reg3= new RegExp(pattern3);
+            if(!reg3.test(Rpassword)){
+                alert ("INVALID PASSWORD");
+            }
+            if(!b==c){
+                alert("INVALID REPEAT PASSWORD");
+            }
+
+// for enrollment
+
+            var d = document.getElementById("enrollment").value;
+            pattern4= 
+            reg4= new RegExp(pattern4);
+            if(!reg2.test(enrollment)){
+                alert ("INVALID enrollment");
+            }
+// for email
+            var e = document.getElementById("email").value;
+            pattern5= 
+            reg5= new RegExp(pattern5);
+            if(!reg5.test(email)){
+                alert ("INVALID email");
+            }
+        }
+    </script>
+</body>
+</html>
